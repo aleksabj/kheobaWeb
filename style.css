@@ -149,7 +149,7 @@ header p {
 }
 
 #about {
-  padding: 40px 0;
+  padding: 20px 0;
   margin-top: 90px;
   text-align: center;
   background-color: rgba(17, 60, 95, 0.21);
@@ -157,8 +157,8 @@ header p {
 }
 
 #about h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+  font-size: 2.2rem;
+  margin-bottom: 15px;
   color: #333;
 }
 
@@ -167,18 +167,18 @@ header p {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-left: 40px;
+  margin-left: 20px;
 }
 
 .about-text {
   flex: 1;
-  padding: 20px;
+  padding: 15px;
   max-width: 600px;
 }
 
 .about-image {
   flex: 1;
-  padding: 20px;
+  padding: 15px;
   max-width: 600px;
 }
 
@@ -188,8 +188,8 @@ header p {
 }
 
 #about p {
-  font-size: 1.2rem;
-  line-height: 1.8;
+  font-size: 1.1rem;
+  line-height: 1.7;
   color: #555;
 }
 
@@ -257,14 +257,109 @@ h3 {
     padding: 20px;
     text-align: center;
   }
+  .navbar {
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .navbar li {
+    margin-left: 10px;
+  }
+
+  .navbar li:not(:last-child)::after {
+    right: -10px;
+  }
+
+  .navbar a {
+    font-size: medium;
+  }
 }
 /* FIRST */
 
+
+
+
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .container {
+      width: 90%;
+      padding: 0 15px;
+    }
+    .containerbut {
+        width: 90%;
+        padding: 0 15px;
+    }
+    .cta-container {
+        width: 90%;
+        padding: 0 15px;
+        margin: 50px auto 0 auto;
+    }
+    .cards-grid {
+        width: 90%;
+        padding: 0 15px;
+        margin: 50px auto 0 auto;
+
+    }
+    .last-container {
+        width: 90%;
+        padding: 0 15px;
+        margin: 50px auto 0 auto;
+    }
+    header h1 {
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    header {
+      height: auto;
+      padding: 20px 0;
+    }
+    header h1, header p {
+      padding: 8px;
+    }
+  }
+
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .container {
+      width: 85%;
+    }
+    .containerbut {
+        width: 85%;
+    }
+    .cta-container {
+        width: 85%;
+    }
+    .cards-grid {
+        width: 85%;
+    }
+    .last-container {
+        width: 85%;
+    }
+    header h1 {
+      font-size: 3.5rem;
+    }
+    header p {
+      font-size: 1.3rem;
+    }
+  }
+
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    .container {
+      width: 80%;
+    }
+  }
+
+
+  
 /* SECOND */
 .containerbut {
   display: flex;
   justify-content: center;
-  gap: 200px;
+  gap: 100px;
 }
 
 .cta-container {
@@ -272,7 +367,7 @@ h3 {
   background-color: rgb(188, 166, 135, 0.21);
   padding: 40px;
   border-radius: 10px;
-  margin: 90px;
+  margin: 90px auto 0 auto;
   width: 80%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -367,6 +462,7 @@ footer p {
 
 .cards-grid {
   display: grid;
+  margin: 50px auto 0 auto;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   padding: 2em;
@@ -434,9 +530,10 @@ footer p {
   background-color: rgb(83, 132, 108, 0.21);
   padding: 40px;
   border-radius: 10px;
-  margin: 90px;
+  /* margin-top: 90px; */
   width: 80%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 90px auto 0 auto;
 }
 
 .last-container h3 {
